@@ -10,7 +10,7 @@
 
   &-list {
     @include flexbox;
-    margin: 0 - #{$grid-margin};
+    margin: 0 -#{$grid-margin};
   }
 
   &-item {
@@ -19,7 +19,7 @@
     &.is-active {
       button {
         color: $blue;
-        border-bottom: 2px solid $blue;
+        border-bottom-color: $blue;
       }
     }
 
@@ -45,8 +45,8 @@
 
   @include responsive(T) {
     top: $gnb-height-md + $lnb-height-md;
-    background-color: $background;
     height: 54px;
+    background-color: $background;
     border-bottom: 0;
 
     &-list {
